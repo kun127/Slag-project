@@ -3,27 +3,27 @@ int main()
 {
     int N,M;
     int i,sum=0,cnt=0;
-	printf("输入M N\n");
+    printf("输入M N\n");
     scanf("%d%d",&M,&N);
     for(i=M;i<=N;i++)
-	{          //取[M,N]的区间
+    {                         //取[M,N]的区间
         int isprime,k;
         isprime=1;
         for(k=2;k<i-1;k++)
-		{
+	{
             if(i%k==0)
-			{         //判断是否素数：用i%2~i%i-1，如果取余结果为0，就不是素数，开始下一循环
+	    {                 //判断是否素数：用i%2~i%i-1，如果取余结果为0，就不是素数，开始下一循环
                 isprime=0;
                 break;
             }
         }
         if(isprime)
-		{        
+	{        
             cnt++;            //计算素数个数
             sum+=i;           //计算素数的和
-		}
+	}
     }
     printf("[%d,%d]之间素数的个数为%d,和为%d\n",M,N,cnt,sum);
-	system("pause");
+    system("pause");
     return 0;
 }
