@@ -1,0 +1,20 @@
+#include<stdio.h>
+int main()
+{
+	int i,b,j=0;
+	int a[10];
+	printf("输入苹果高度和凳子高度\n");
+	for(i=0;i<=9;i++)
+	{
+		scanf("%d",&a[i]);
+	}
+	scanf("%d",&b);
+	for(i=0;i<=9;i++)
+	{
+		if(b+30>=a[i])
+		j++;
+	}
+	printf("%d\n",j);
+	system("pause");
+	return 0;
+}
