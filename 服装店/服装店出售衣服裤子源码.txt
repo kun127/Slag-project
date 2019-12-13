@@ -3,7 +3,7 @@ int main()
 {
 	int c,t,m;
 	printf("请依次输入上衣、裤子的件数\n");
-    scanf("%d%d",&c,&t);
+	scanf("%d%d",&c,&t);
 	if(c==t)
 	{
 		if(c>=50)
