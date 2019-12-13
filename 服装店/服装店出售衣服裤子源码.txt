@@ -1,0 +1,46 @@
+#include<stdio.h>
+int main()
+{
+	int c,t,m;
+	printf("请依次输入上衣、裤子的件数\n");
+    scanf("%d%d",&c,&t);
+	if(c==t)
+	{
+		if(c>=50)
+		{
+			m=c*80;
+		}
+		else
+		{
+			m=c*90;
+		}
+	}
+	else
+	{
+		if(c>t)
+		{
+			if(t>=50)
+			{
+				m=t*80+(c-t)*60;
+			}
+			else
+			{
+				m=t*90+(c-t)*60;
+			}
+		}
+		else
+		{
+			if(c>=50)
+			{
+				m=c*80+(t-c)*45;
+			}
+			else
+			{
+				m=c*90+(t-c)*45;
+			}
+		}
+	}
+	printf("%d\n",m);
+	system("pause");
+	return 0;
+}
