@@ -1,0 +1,16 @@
+#include<stdio.h>
+int main()
+{
+	int i,a[4],b=0;
+	float c;
+	for(i=0;i<=3;i++)
+	{
+		scanf("%d",&a[i]);
+		b=b+a[i];
+	}
+	c=(float)b/4;
+	printf("Sum = %d; Average = %.1f\n",b,c);
+	system("pause");	
+	return 0;
+}
+
