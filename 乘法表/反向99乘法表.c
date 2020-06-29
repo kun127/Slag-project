@@ -1,4 +1,3 @@
-//反向99乘法表
 #include<stdio.h>
 
 int main()
